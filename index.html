@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Porto Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+</head>
+
+<body class="bg-dark">
+    <!--NAV-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Salsa Bila Rahmania Sharafi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Others </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="/Contact">Contact</a></li>
+                            <li><a class="dropdown-item" href="/Gallery">Gallery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--nav end-->
+
+    <!--layout-->
+    <div class="container-fluid bg-dark text-light" style="height: 100vh">
+        <!--carousel-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/1.jpg" class="d-block w-100" alt="1" style="height: 500px" />
+                    <div class="carousel-caption">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/2.jpg" class="d-block w-100" alt="2" style="height: 500px" />
+                    <div class="carousel-caption">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/3.jpg" class="d-block w-100" alt="3" style="height: 500px" />
+                    <div class="carousel-caption">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+        <!--end carousel-->
+
+        <div class="row text-center align-items-center mt-4">
+            <div class="col-12">
+                <img src="image/8.jpg" alt="my profil" class="img-thumbnail" style="height: 250px; width: 175px" />
+                <h2 class="mt-2">I'm Salsa Bila</h2>
+                <i>Berpengalaman lebih dari <span style="color: coral">300+</span> Project IT</i>
+            </div>
+        </div>
+        <div class="row text-dark mt-6">
+            <div class="col-sm-6 g-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Jasa IT</h5>
+                        <p class="card-text text-center">Hi, saya siap & bersedia membantu kamu dalam menyelesaikan project impianmu</p>
+                        <a href="/contact" class="btn btn-dark d-block">Hubungi Sekarang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 g-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Gallery</h5>
+                        <p class="card-text text-center">Testimonial</p>
+                        <a href="/Gallery" class="btn btn-dark d-block">Go to gallery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--layout end-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>
